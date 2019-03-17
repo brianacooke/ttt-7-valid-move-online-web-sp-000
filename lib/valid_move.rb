@@ -1,9 +1,9 @@
 def valid_move? (board, index)
-  if num.between? (0,8) == true
+  if num.between? (0,8)
     puts true
   else
     puts false
-    if (position_taken?(board, index)) == false && (on_board?(index) == true)
+    if (position_taken?(board, index)) && (on_board?(index))
     puts true
   else
     puts false
