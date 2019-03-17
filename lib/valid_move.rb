@@ -1,10 +1,12 @@
-def valid_move?(board, position)
-  if position.to_i.between?(1,9)
-    if !position_taken?(board, position.to_i-1)
-      true
-    else
-      false
-    end
+def valid_move? (board, index)
+  if num.between? (0,8) == true
+    puts true
+  else
+    puts false
+    if (position_taken?(board, index)) == false && (on_board?(index) == true)
+    puts true
+  else
+    puts false
   end
 
 
